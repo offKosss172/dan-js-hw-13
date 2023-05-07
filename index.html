@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners-hw13</title>
+    <style>
+     body{
+      display: flex;
+      align-items: center;
+     }
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+      }
+      .images-wrapper {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+        width: 100px;
+        height: 60px;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid tomato;
+        background-color: tomato;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <button id="start">Запустити программу?</button>
+      <img src="./img/1.jpg" alt="image of game" class="image-to-show" id="img1" style="display: none;"/>
+      <img src="./img/2.jpg" alt="image of game" class="image-to-show" id="img2" style="display: none;"/>
+      <img src="./img/3.JPG" alt="image of game" class="image-to-show" id="img3" style="display: none;"/>
+      <img src="./img/4.png" alt="image of game" class="image-to-show" id="img4" style="display: none;"/>
+    </div>
+    <div>
+      <button id="stop">Припинити</button>
+      <button id="play">Відновити</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
